@@ -1,0 +1,226 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+/*
+
+colors:
+blue
+#27c7ab
+
+gray darker bg 
+#e4e4e4
+
+gray 
+#f1f1f1
+
+text gray 
+#b8b8b8
+*/
+
+body {
+	font-family: 'Raleway', 'Tahoma', sans-serif;
+	font-size: 12px;
+}
+.container {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+/* -------------------- HEADER + LOGO -------------------- */
+
+header {
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+}
+
+header p {
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 50%;
+	margin: 10px 20px 10px 0px;
+}
+
+header p a span {
+	color: #27c7ab;
+}
+header p a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* klasa */
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/* -------------------- NAV -------------------- */
+
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+}
+
+.main-nav, .hover-nav {
+	list-style: none;
+}
+.main-nav li {
+	display: inline-block;
+	margin: 10px 0px 10px 20px;
+}
+.main-nav li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.hover-nav {
+	display: flex;
+	flex-direction: column;
+}
+.hover-nav li a {
+	text-transform: none;
+}
+
+/* -------------------- SECTION HERO-------------------- */
+
+.hero {
+	
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f7f7+0,f7f7f7+57,9e9e9e+100 */
+background: rgb(247,247,247); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(247,247,247,1) 0%, rgba(247,247,247,1) 57%, rgba(158,158,158,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(247,247,247,1) 0%,rgba(247,247,247,1) 57%,rgba(158,158,158,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(247,247,247,1) 0%,rgba(247,247,247,1) 57%,rgba(158,158,158,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#9e9e9e',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+/* -------------------- ARROW-------------------- */
+.arrow-left {
+	content: "";
+	 border: solid #27c7ab;
+ 	 border-width: 0 3px 3px 0;
+	 height: 30px;
+	 width:  60px;
+	transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow-right {
+	content: "";
+	 border: solid #27c7ab;
+ 	 border-width: 0 3px 3px 0;
+	 height: 30px;
+	 width:  60px;
+	transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+
+}
+
+.main-hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-hero {
+	margin: 30px 50px 30px 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-hero h1 {
+	text-transform: uppercase;
+	font-size: 24px;	
+}
+
+.text-hero h1 span {
+	color: #27c7ab;	
+}
+
+.text-hero p {
+	text-align: center;
+	margin: 30px 0px;
+}
+
+.text-hero button {
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #27c7ab;
+}
+
+.text-hero button a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/* -------------------- PSECTION PRODUCTS-------------------- */
+
+.products {
+	background-color: #fff;
+}
+
+.container-box {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.box-1, .box-2 {
+	width: 32%;
+	position: relative;
+}
+
+.box-3 {
+	width: 32%;
+	position: relative;
+	border: 1px solid #e4e4e4;
+	padding: 20px;
+}
+.box-3 p {
+	margin-top: 20px;
+}
+
+.box-1 img, .box-2 img {
+	width: 100%;
+}
+.box-1 .opacity-bg, .box-2 .opacity-bg {
+	width: 100%;
+	height: 70px;
+	background-color: rgba(255,255,255,0.7);
+	position: absolute;
+	top: 50%;
+	padding: 20px;
+}
+
+h2 {
+	font-weight: 700px;
+}
+
+h2::after {
+	content: '';
+	width: 160px;
+	height: 5px;
+	background-color: #27c7ab;
+	display: block;
+	border-radius: 10px;
+}
+.box-1 h2 span, .box-2 h2 span{
+	text-transform: uppercase;
+}
+
+
+
